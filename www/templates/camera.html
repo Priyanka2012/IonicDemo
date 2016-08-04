@@ -1,0 +1,14 @@
+<ion-view view-title="Image Picker">
+    <ion-content>
+        <div class="centerDiv">
+            <div>
+                <button class="button icon-left ion-camera" ng-click="cameraCtrl.capturePhotoFromCamera()">Capture</button>
+                <button class="button icon-left ion-ios-photos" ng-click="cameraCtrl.selectPhotoFromGallery()">Photo Gallery</button>
+            </div>
+        </div>
+        <div class="imageDiv">
+            <img ng-src="{{selectedPhoto}}" />
+        </div>
+    </ion-content>
+
+</ion-view>
